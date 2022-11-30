@@ -1,4 +1,176 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+$primary-color: #252265;
+$blue: #1446D8;
+$dark-grey: #393939;
+$primary-gradient: linear-gradient(180deg, rgba(248, 242, 211, 0.6), rgba(242, 197, 225, 0.6), rgba(196, 158, 239, 0.7), rgba(13, 97, 204, 0.7));
+
+@font-face {
+    font-family: 'Neo Sans';
+    font-style: normal;
+    font-weight: normal;
+    src: url('assets/fonts/Neo Sans Std Bold.otf') format('embedded-opentype');
+}
+
+$gradient: linear-gradient(to down, rgba(169, 208, 113, 0), rgba(136, 173, 215, 1));
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Neo Sans;
+}
+
+//navigation styles start
+main {
+    height: 100vh;
+    background-image: url("assets/icons/globe.svg"), url('assets/icons/cloud.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: left 0 top -12px, left 0 bottom -12px, ;
+    z-index: -99;
+
+}
+.clouds{
+    background-image:url("assets/icons/cloud.svg"), url("assets/images/cloud5.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left 50% top -105px, right -62px top 50%;
+    z-index: 99;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+}
+
+.bg {
+    background: url('assets/images/bg.svg');
+    height: 100vh;
+    z-index: 99;
+    display: flex;
+    align-items: flex-end;
+}
+
+.hero-sec-title {
+    display: flex;
+    justify-content: flex-end;
+
+    h3 {
+        font-size: 2.7rem;
+        color: $primary-color;
+    }
+
+}
+.globe {
+    margin-bottom: 70px;
+    opacity: 0.2;
+}
+.success-sec{
+    display: flex;
+}
+.end-align{
+    align-items: flex-end;
+}
+
+.lets-btn-sec {
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+        background-color: $blue;
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+        padding: 8px 18px;
+        margin-top: 20px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.nav-link {
+    color: $dark-grey;
+}
+
+.nav-item {
+
+    &:hover {
+        background-color: #f8f9fa;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}
+
+.navbar-brand {
+    color: $primary-color;
+}
+
+.navbar {
+    text-transform: uppercase;
+    position: fixed;
+    width: 100%;
+    top: 24px;
+    z-index: 9999;
+}
+
+.custom-navbar {
+    justify-content: end;
+}
+
+.login-btn {
+    display: flex;
+}
+
+.logint-text {
+    margin-left: 10px;
+}
+
+.bg-images {
+    position: absolute;
+    top: 0%;
+    opacity: 0.4;
+}
+
+.primary-heading {
+    font-size: 2rem !important;
+    color: $blue;
+    text-align: center;
+
+    span {
+        color: #fff;
+        display: block;
+        margin-top: 10px;
+    }
+}
+.success-sec{
+    color: $blue;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav {
+        margin-right: 16px;
+    }
+
+    .dis-flex {
+        display: flex;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: var(--bs-navbar-nav-link-padding-x);
+        padding-left: var(--bs-navbar-nav-link-padding-x);
+        padding: 6px 20px;
+    }
+
+    .nav-position-abs {
+        position: absolute;
+        width: 100%;
+    }
+
+    .icon-box-img {
+        width: 134px;
+        text-align: center;
+    }
+}
