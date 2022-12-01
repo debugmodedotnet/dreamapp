@@ -5,6 +5,7 @@ $primary-color: #252265;
 $blue: #1446D8;
 $dark-grey: #393939;
 $primary-gradient: linear-gradient(180deg, rgba(248, 242, 211, 0.6), rgba(242, 197, 225, 0.6), rgba(196, 158, 239, 0.7), rgba(13, 97, 204, 0.7));
+$reverse-gradient: linear-gradient(180deg, rgb(159 151 237), rgb(217 167 224), rgb(242 194 217), rgb(99 152 237));
 
 @font-face {
     font-family: 'Neo Sans';
@@ -24,20 +25,32 @@ body {
     margin: 0;
     font-family: Neo Sans;
 }
-
-//navigation styles start
-main {
-    height: 100vh;
-    background-image: url("assets/icons/globe.svg"), url('assets/icons/cloud.svg');
-    background-repeat: no-repeat, no-repeat;
-    background-position: left 0 top -12px, left 0 bottom -12px, ;
-    z-index: -99;
-
+.dream-sec{
+    background-image: $reverse-gradient;
+    margin-top: -5px;
+    .row{
+        &:nth-child(1){
+            img{
+                opacity: 0.5;
+            }
+        }
+    }
 }
-.clouds{
-    background-image:url("assets/icons/cloud.svg"), url("assets/images/cloud5.png");
-    background-repeat: no-repeat, no-repeat;
-    background-position: left 50% top -105px, right -62px top 50%;
+
+video {
+    width: 100%;
+}
+.banner-conent{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.clouds {
+    background-image: url("assets/icons/cloud.svg"), url("assets/images/cloud5.png"), url("assets/images/cloud3.png");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: left 50% top -105px, right -62px top 50%, left -100px top 70%;
     z-index: 99;
     width: 100%;
     position: absolute;
@@ -48,8 +61,12 @@ main {
     background: url('assets/images/bg.svg');
     height: 100vh;
     z-index: 99;
+    background-attachment: fixed;
     display: flex;
     align-items: flex-end;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hero-sec-title {
@@ -59,18 +76,35 @@ main {
     h3 {
         font-size: 2.7rem;
         color: $primary-color;
+        line-height: 1.3;
     }
 
 }
+
 .globe {
     margin-bottom: 70px;
     opacity: 0.2;
+    /* width: 100%; */
 }
-.success-sec{
+
+.success-sec {
     display: flex;
 }
-.end-align{
+
+.end-align {
     align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.arrow {
+    margin-left: 22px;
+}
+.dream-secondary-bold-text{
+    font-size: 1rem !important;
+    font-weight: bold !important;
+    color: $blue;
+    line-height: 1.2 !important;
+    text-align: center;
 }
 
 .lets-btn-sec {
@@ -91,6 +125,7 @@ main {
     }
 }
 
+//navigation styles start
 .nav-link {
     color: $dark-grey;
 }
@@ -145,8 +180,13 @@ main {
         margin-top: 10px;
     }
 }
-.success-sec{
+
+.success-sec {
     color: $blue;
+}
+
+.success-story-profiles {
+    margin-left: 20px;
 }
 
 @media (min-width: 992px) {

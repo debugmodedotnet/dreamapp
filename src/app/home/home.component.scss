@@ -1,0 +1,12 @@
+.fg{
+    height: 100vh;
+    background: url('/assets/images/bg.svg');
+}
+.custom-height{
+    height: calc(100vh - 120px);
+}
+.w-100{
+    width: auto !important;
+    margin: auto;
+    display: block;
+}
