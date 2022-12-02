@@ -21,7 +21,8 @@ import { DreamMaterialModule } from './material/dream-material/dream-material.mo
     HttpClientModule,
     FormsModule, 
     HomeComponent,
-    DreamMaterialModule],
+    DreamMaterialModule,
+  ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })

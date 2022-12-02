@@ -1,12 +1,57 @@
-.fg{
-    height: 100vh;
-    background: url('/assets/images/bg.svg');
-}
-.custom-height{
+$text-blue: #302B6D;
+
+.custom-height {
     height: calc(100vh - 120px);
 }
-.w-100{
+
+.w-100 {
     width: auto !important;
     margin: auto;
     display: block;
+}
+
+.dream-heading {
+    font-size: 1.2rem;
+    color: #252265;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.dream-feature-heading {
+    font-size: 1.5rem;
+    color: #3246A6;
+}
+
+.dream-blue-para {
+    color: #3246A6;
+}
+
+.dreams-cloud-options {
+    position: relative;
+    text-align: center;
+
+    h4 {
+        font-size: 2rem;
+        color: $text-blue;
+        text-align: center;
+        display: inline;
+    }
+
+    span {
+        font-size: 0.8rem;
+        display: block;
+        line-height: 1.4;
+        margin-top: 10px;
+    }
+}
+
+.cloud-icon {
+    position: relative;
+}
+
+.dream-cloud-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-40%, -25%);
 }

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="248.163" height="200.943" viewBox="0 0 248.163 200.943">
+  <g id="Group_161714" data-name="Group 161714" transform="translate(-226.879 -2676.485)">
+    <text id="_7_million" data-name="7 million" transform="translate(381 2787.456)" fill="#302b6d" font-size="39" font-family="SegoeUI, Segoe UI"><tspan x="-74.001" y="0">7 million</tspan></text>
+    <text id="loans_closed" data-name="loans closed" transform="translate(321 2803.752)" fill="#252265" font-size="22" font-family="SegoeUI, Segoe UI"><tspan x="0" y="24">loans closed</tspan></text>
+    <g id="Group_161712" data-name="Group 161712" transform="translate(-332.621 0.405)">
+      <path id="Icon_awesome-cloud" data-name="Icon awesome-cloud" d="M42.413,76.362a63.5,63.5,0,0,0,21.074,123.4H185.73a56.428,56.428,0,0,0,56.433-56.433" transform="translate(562.5 2674.259)" fill="none" stroke="#545eb2" stroke-linecap="round" stroke-width="6"/>
+      <path id="Icon_awesome-cloud-2" data-name="Icon awesome-cloud" d="M174.015,37.609A70.546,70.546,0,0,0,42.324,72.791" transform="translate(564.6 2676.83)" fill="none" stroke="#f2e2ff" stroke-linecap="round" stroke-width="6"/>
+      <path id="Icon_awesome-cloud-3" data-name="Icon awesome-cloud" d="M239.838,72.791a42.3,42.3,0,0,0-65.823-35.182" transform="translate(564.6 2677.83)" fill="none" stroke="#fafafa" stroke-linecap="round" stroke-width="6"/>
+    </g>
+  </g>
+</svg>
